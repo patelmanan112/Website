@@ -1,0 +1,52 @@
+nav{
+    width: 85vw;
+    margin: auto;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+#logo{
+    width: 8vw;
+}
+.doc_demos_tools{
+    font-size: 1.7rem;
+   color: gray;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+   display: flex;
+   gap: 1.5vw;
+   font-weight: 500;
+   padding-bottom: 3vh;
+}
+.search_k{
+    width: 7vw;
+    height: 5vh;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.the_hub{
+    background-image: url(https://res.cloudinary.com/dxzo7jfbn/image/upload/v1762517707/WhatsApp_Image_2025-11-07_at_17.32.59_f7d1ab05_fqhna4.jpg);
+    height: 70vh;
+    background-position-x: 24vw;
+    background-position-y: .1vh;
+    background-repeat: no-repeat;
+    background-color:#121A2F ;
+    
+}
+.introduction{
+    background-color: #1A2B6B;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+   padding-top: 1.5vh;
+   padding-bottom: 1.5vh; 
+    color: white;
+}
+
+
+
+

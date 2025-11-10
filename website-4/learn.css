@@ -1,0 +1,1187 @@
+#logo {
+    width: 175px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.part-1 {
+    display: flex;
+    gap: 2.5vw;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    align-items: center;
+}
+
+#search {
+    width: 25px
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav_bar {
+    /* position: fixed; */
+    background-color: white;
+}
+
+.part-2 {
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+    margin-top: 1.5vh;
+}
+
+.nav {
+    width: 94vw;
+    margin: auto;
+    margin-top: 1vh;
+}
+
+.start_building {
+    width: 7vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    font-weight: 500;
+    /* margin-top: 1vh; */
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.start_building:hover{
+    background-color: black;
+    color: white;
+       transition: all .5s ease;
+}
+.nav_bar {
+    height: 8.7vh;
+    border-bottom: 2px solid rgb(234, 234, 234);
+}
+
+.powering_onchain {
+    width: 60%;
+    /* background-color: #0119b7; */
+    display: flex;
+    margin-top: 30vh;
+    margin-left: 2.5vw;
+    flex-direction: column;
+    color: white;
+    gap: 4vh;
+}
+
+.powerOriginal {
+    width: 94vw;
+    display: flex;
+     background-color: #0119b7;
+   background-image: url(https://cdn.prod.website-files.com/5f6b7190899f41fb70882d08/6890c4a1e12d08777a51a827_platform-hero_desktop-p-2000.webp);
+    background-size: cover;
+    margin: auto;
+    /* border: 1px solid black; */
+    border-left: 1px solid #182ba1;
+    border-right: 1px solid #182ba1;
+    padding-bottom: 5vh;
+}
+
+.powering_text {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.powerOriginalMain{
+    background-color: #001a62;
+}
+.font {
+    font-size: 6rem;
+    font-weight: 400;
+    color: white;
+}
+
+.font1 {
+    color:#99aee0;
+}
+
+.power_box {
+    display: flex;
+    gap: 2vw;
+}
+
+.power_box1 {
+    width: 12vw;
+    height: 7vh;
+    font-family: sans-serif;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+     cursor: pointer;
+}
+.power_box1:hover{
+    background-color: #0847f7;
+    transition: all .5s ease;
+}
+.power_box2:hover{
+    background-color: #d5d8dd;
+    color: black;
+    transition: all .5s ease;
+}
+.power_box2 {
+    width: 12vw;
+    height: 7vh;
+    font-family: sans-serif;
+    border: 2px solid gray;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.unified_platform_main{
+    width: 94vw;
+    margin: auto;
+    border-left: 1px solid #e1e3e6;
+    border-right: 1px solid #e1e3e6;
+    display: flex;
+}
+.unified_platform_child1 , .unified_platform_child2 , .unified_platform_child3{
+    width: 33.33%;
+    background-color:#f5f7fa ;
+padding: 3vw;
+display: flex;
+flex-direction: column;
+gap: 2vh;
+padding-bottom: 6vh;
+}
+.interoperability{
+    display: flex;
+flex-direction: column;
+gap: 2vh;
+width: 80%;
+}
+.chainlink_stackO{
+    display: flex;
+    justify-content: space-between;
+     padding: 3vw; 
+}
+.stack_chainlink{
+    border-top: 1px solid #e1e3e6;
+        border-bottom: 1px solid #e1e3e6;
+}
+.instead_building_complex_patchwork{
+width: 43%;
+color: rgb(116, 113, 113);
+}
+.unified_platform_streamlined{
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+       border-left: 1px solid #e1e3e6;
+    border-right: 1px solid #e1e3e6;
+}
+.data_privacy_child{
+    display: flex;
+}
+.data_privacy_dowm{
+    display: flex;
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    gap: 2vh;
+
+}
+.onchain_data_protocol , .ccip , .ocp , .privacy , .cre{
+    border-top: 1.8px solid #dfe3e8;
+    padding-top: 2vh;
+    color: #666a70;
+}
+.data_privacy_child2{
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+padding: 3vw;
+    width: 50%;
+}
+.data_privacy_top{
+    font-size: 3rem;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.instead_building_complex_patchwork{
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.data_privacy_main{
+    width: 94vw;
+    margin: auto;
+          border-left: 1px solid #e1e3e6;
+    border-right: 1px solid #e1e3e6;
+    background-color: #f5f7fa;
+}
+#data_privacy_img{
+    width: 100%;
+}
+.data_privacy_child1{
+    width: 50%;
+}
+.instead_building_complex{
+    font-size: 3.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+}
+.stack_chainlink_main{
+    width: 94vw;
+    margin: auto;
+    /* padding: 5vw; */
+       border-left: 1px solid #e1e3e6;
+    border-right: 1px solid #e1e3e6;
+}
+.application_privacy_confidence_child{
+    font-size: 1.1rem;
+    color: rgb(67, 67, 67);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.data_privacy{
+    border-bottom: 1px solid #e1e3e6;
+}
+#building{
+        width: 3vw;
+        padding-bottom: 5vh;
+}
+#home{
+    width: 3.5vw;
+    padding-bottom: 5vh;
+}
+#qrCode{
+height: 4vw;
+padding-bottom: 3vh;
+}
+.interoperability_img{
+padding-right: 4vw;
+}
+.unified_platform_child2{
+        border-left: 1px solid #e1e3e6;
+    border-right: 1px solid #e1e3e6;
+
+}
+.trillion_billion{
+    border-top: 1px solid #e1e3e6;
+      border-bottom: 1px solid #e1e3e6;
+}
+.trillion_billion_main{
+    width: 94vw;
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+    color: #639cff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #001a62;
+}
+.transaction_value{
+/* padding-left: 3vw; */
+text-align: center;
+}
+.trillion_text{
+    font-size: 4em;
+    font-weight: 500;
+}
+.trillion_enable{
+    padding: 2vw;
+}
+.oneAdMain {
+    width: 94vw;
+    margin: auto;
+    background-color: rgb(245, 247, 250);
+    margin-top: 4vh;
+    padding-bottom: 5vh;
+}
+
+.JP_morgan_box {
+    padding-bottom: 3vh;
+    border: 1px solid rgb(171, 171, 171);
+}
+
+.powerinngToken {
+    width: 90%;
+    margin: auto;
+}
+
+.financialAssest {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.tokenized_stablecoins_row {
+    display: flex;
+    gap: 3vw;
+}
+.powering_next_generation_main{
+    width: 94vw;
+    margin: auto;
+    border: 1px solid #D8DCE2;
+}
+.usb_aave_anz_main{
+    display: flex;
+}
+.digital_financial{
+    padding: 3.6vw;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.usb{
+    width: 25%;
+    /* background-color: #0119b7; */
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+    border-top: 1px solid #d5d8dd ;
+    border-left: 1px solid #d5d8dd;
+ 
+
+}
+.assets_management{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.usb1{
+    border-top: 4px solid #0847f7;
+        width: 25%;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+}
+.ubs_assets_swift{
+    width: 44%;
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 3vh;
+}
+.assets_managment_child{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+.read_press_release{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #0e1119;
+}
+.usb_assets_row{
+    padding: 3vw;
+    padding-top: 7vh;
+    display: flex;
+        background-color: #f5f7fa;
+}
+.assets_fund_image{
+    width: 100%;
+    height: auto;
+}
+.sbi_digital{
+    width: 28vw;
+    border: 1px solid #e1e3e6;
+}
+.assets_fund{
+  background-color: white;
+padding: 2vw;
+}
+.ubs5{
+    width: 6vw;
+}
+.uds{
+  width:   6vw;
+  filter: grayscale(90%) brightness(120%);
+}
+.oneAdMain {
+    border: 1px solid rgb(234, 234, 234);
+
+}
+
+.financialAssest {
+    margin-top: 5vh;
+    margin-left: 3vw;
+
+}
+
+.tokenized_stablecoins_row {
+    margin-top: 8vh;
+}
+
+.tokenized_stablecoins_row {
+    border-top: 1px solid rgb(109, 107, 107);
+    /* padding-top: 1vh; */
+    font-weight: 500;
+    word-spacing: .4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tokenized_funds {
+    padding-top: 1vh;
+    border-top: 1px solid rgb(46, 123, 255);
+}
+
+.stablecoins,
+.payment,
+.onchain_data,
+.lending_borrowing,
+.derivatives {
+    padding-top: 1vh;
+}
+
+.both_text_img {
+    display: flex;
+    /* border: 1px solid black; */
+    margin-top: 7vh;
+}
+
+.JP_morgan {
+    /* border: 1px solid black; */
+    width: 35%;
+
+}
+
+.JP_morgan_inner_box {
+    width: 90%;
+    margin: auto;
+    margin-top: 3vh;
+}
+
+#JP_morgan {
+    width: 100%;
+}
+
+.JP_morgan_img {
+    /* width: 90%; */
+    margin: auto;
+    background-color: white;
+
+}
+.JP_morgan_inner_img{
+    overflow: hidden;
+  
+}
+.JP_morgan_inner_img:hover img{
+    transform: scale(1.06);
+      transition: all .3s ease;
+}
+.JP_morgan_inner_text {
+    width: 75%;
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.JP_morgan_box {
+    margin: auto;
+}
+
+.JP_morgan_text {
+    padding-top: 5vw;
+    padding-left: 9vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.connect_and_orchestrate {
+    /* padding: 6vw; */
+    /* padding-left: 9vw; */
+    /* margin: 6vw;
+    margin-left: 9vw; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vh;
+
+
+}
+
+.selcter_connect_automate_enable {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+
+.enable_tokenized {
+    font-size: 1.7rem;
+    width: 63%;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.future_proof {
+    background-color: #001a62;
+
+}
+
+.future_proof_main {
+    width: 94vw;
+    margin: auto;
+    /* border: 1px solid rgb(234, 234, 234); */
+    background-color: #0e1119;
+}
+
+.footer_platform {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+
+}
+
+.move_onchain {
+    font-size: 3.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: white;
+    width: 50%;
+
+
+
+}
+
+.footer_platform {
+    width: 35%;
+    padding-left: 5vw;
+    padding-top: 5vh;
+}
+
+.talk_to_expert {
+    width: 10vw;
+    height: 5vh;
+    font-family: sans-serif;
+    background-color: #0d5dff;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.talk_to_expert:hover{
+    background-color: #0847f7;
+    transition: all .5s ease;
+}
+.learn_talk{
+    display: flex;
+    gap: 2vw;
+}
+.learn_more_to{
+      width: 8vw;
+    height: 5vh;
+    font-family: sans-serif;
+  border: 1px solid white;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.learn_more_to:hover{
+     background-color: #0847f7;
+    transition: all .5s ease;
+}
+#future_proof_background {
+    /* margin-bottom: 15vh; */
+    /* width: 100%; */
+    width: 100%;
+}
+
+.future_proof_background {
+    width: 60%;
+}
+.space{
+    height: 5vh;
+    width: 94vw;
+    margin: auto;
+        border-left: 1px solid #1b1e89;
+    border-right: 1px solid #1b1e89;
+}
+.future_proof_main {
+    display: flex;
+    /* padding-top: 5vh; */
+    margin-bottom: 5vh;
+     background-image: url(https://cdn.prod.website-files.com/5f6b7190899f41fb70882d08/6890c4a1e12d08777a51a827_platform-hero_desktop-p-2000.webp);
+    background-size: cover;
+    background-size: auto;
+    background-position-x:10vw ;
+    background-position-y: -5vh;
+      background-color: #00139c;
+    background-repeat: no-repeat;
+    /* background-image: url(https://res.cloudinary.com/dxzo7jfbn/image/upload/v1762227578/Screenshot_2025-11-04_090819_am2w9t.png);
+    background-position-x:80vw ;
+    background-repeat: no-repeat; */
+    height: 50vh;
+        border-left: 1px solid #1b1e89;
+    border-right: 1px solid #1b1e89;
+}
+
+.future_proof {
+    padding-top: 6vh;
+    padding-bottom: 4vh;
+}
+.assets_fund_img{
+    overflow: hidden;
+    
+
+}
+.assets_fund_image{
+    transition: all .3s ease;
+}
+.assets_fund_img:hover .assets_fund_image{
+    transform: scale(1.05);
+}
+.inbox {
+    border-top: 1px solid #717889;
+    background-color: #0e1119;
+
+}
+
+.inbox_main {
+    width: 94vw;
+    margin: auto;
+
+    border-left: 1px solid rgb(109, 107, 107);
+    border-right: 1px solid rgb(109, 107, 107);
+    display: flex;
+
+   
+}
+
+.logoFooter {
+    color: gray;
+     padding-top: 5vh;
+         padding-bottom: 5vh;
+}
+
+.use_cases {
+    color: rgb(216, 207, 207);
+    padding-top: 4vh;
+    /* padding-left: 5vw; */
+    width: 60%;
+       padding-bottom: 5vh;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-family: 'Segoe UI';
+}
+
+.logo_div_email {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.logoFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5vw;
+    border-right: 1px solid rgb(109, 107, 107);
+    
+    background-color: #141921;
+}
+
+#inputEmail {
+    width: 14vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    background-color: #0e1119;
+    padding-left: 1vw;
+    border: 1px solid rgb(109, 107, 107);
+}
+
+.subscribe_now {
+    width: 6vw;
+    height: 5.3vh;
+    font-family: sans-serif;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: .89rem;
+}
+
+.agrement {
+    display: flex;
+    gap: .5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#checkbox {
+    height: 3vh;
+}
+
+.email_div {
+    display: flex;
+
+}
+
+.latest_chainlink {
+    font-size: 1.2rem;
+    width: 52%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.overview ul {
+    font-family: 'Segoe UI';
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    color: #A7ADBB;
+    list-style-type: none;
+}
+
+.logoFooter {
+    width: 30%;
+}
+
+.overview_one {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6vh;
+    font-family: 'Segoe UI';
+}
+
+.up {
+    display: flex;
+    font-size: 1.2rem;
+    /* gap: 3vh; */
+    margin-top: 1vh;
+    justify-content: space-evenly;
+    font-family: 'Segoe UI';
+}
+
+.use_cases_main ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+      color: #A7ADBB;
+    list-style-type: none;
+}
+
+.get_involved ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+      color: #A7ADBB;
+    list-style-type: none;
+}
+
+.down {
+    margin-top: 10vh;
+    display: flex;
+    font-size: 1.2rem;
+    /* gap: 3vh; */
+    justify-content: space-evenly;
+    font-family: 'Segoe UI';
+    margin-left: -3vw;
+}
+
+.overview_two ul{
+      display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+      color: #A7ADBB;
+    list-style-type: none;
+}
+
+.what_happening ul{
+       display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+      color: #A7ADBB;
+    list-style-type: none;
+}
+.ecosystem ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+      color: #A7ADBB;
+    list-style-type: none;
+}
+.copyright_main{
+    width: 94vw;
+    margin: auto;
+
+}
+.chainnlink_copyright_text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: flex;
+    gap: 2vw;
+
+}
+
+.copyright{
+    background-color: #0e1119;
+    border-top: 1px solid rgb(109, 107, 107); ;
+}
+.copyright_main{
+   border-left: 1px solid rgb(109, 107, 107);
+    border-right: 1px solid rgb(109, 107, 107);
+}
+
+#checkbox{
+    width: 1vw;
+    margin-top: -.8vh;
+}
+
+@media screen and (max-width:576px) {
+    .platfrom{
+        display: none;
+    }
+        .unified_platform_main{
+        flex-direction: column;
+    }
+    .unified_platform_child1{
+        width: 100%;
+    }
+    .unified_platform_child2{
+         width: 100%;
+    }
+    .unified_platform_child3{
+        width: 90%;
+    }
+    #qrCode{
+        width: 15vw;
+        height: auto;
+    }
+    #building{
+          width: 13vw;
+        height: auto;
+    }
+    .chainlink_stackO{
+        flex-direction: column;
+        gap: 5vh;
+        padding-bottom: 5vh;
+    }
+    .instead_building_complex_patchwork{
+        width: 100%;
+        
+    }
+    .data_privacy_dowm{
+        font-size: 1.4rem;
+    }
+    .data_privacy_child2{
+        width: 100%;
+        gap: 19vh;
+    }
+    .data_privacy_child1{
+        width: 100%;
+    }
+    .data_privacy_top{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .data_privacy_child{
+        flex-direction: column;
+    }
+    #data_privacy_img{
+        width: 100%;
+        height: auto;
+    }
+    .usb_aave_anz_main{
+        overflow: auto;
+        scrollbar-width: auto;
+    }
+    .usb_assets_row{
+        flex-direction: column;
+    }
+    .trillion_billion_main{
+        flex-direction: column;
+    }
+    .trillion_text{
+        font-size: 2rem;
+    }
+    .transaction_value{
+        text-align: start;
+        font-size: .8rem;
+    }
+    .chainlink_stackL{
+        width: 100%;
+        height: 90%;
+        /* height: auto; */
+    }
+    .digital_financial{
+        font-size: 1.7rem;
+    }
+    #home{
+         width: 13vw;
+        height: auto;
+    }
+    .solution{
+        display: none;
+    }
+    .developer{
+        display: none;
+    }
+    .resources{
+        display: none;
+    }
+    .start_building{
+        font-size: .6rem;
+    }
+    #logo{
+        /* height: 5vw; */
+        /* width: auto; */
+    }
+    .start_building{
+        width: 16vw;
+        height: 4vh;
+        font-size: .65rem;
+    }
+    .chaiLinkeMain{
+        display: flex;
+        flex-direction: column;
+    }
+    #blackPolygon{
+        width: 100%;
+        height: auto;
+    }
+    .tokenized_stablecoins_row{
+        overflow-x: auto;
+        scrollbar-width: none;
+        font-size: .9rem;
+        gap: 5vw;
+    }
+    .inbox_main{
+        flex-direction: column;
+    }
+    .chainlink_foundation{
+        font-size: .6rem;
+    }
+    .logoFooter{
+        width: 94%;
+        gap: 30vh;
+        /* text-align: center; */
+        justify-content: center;
+    }
+    .latest_chainlink{
+        display: flex;
+        justify-content: center;
+               text-align: center;
+    }
+    .logo_div_email{
+        display: flex;
+        justify-content: center;
+    }
+    .email_div{
+
+    }
+    .font{
+        font-size: 3rem;
+       display: flex;
+       
+    }
+    .usb_assets_row{
+        gap: 4vh;
+    }
+    .footer_platform{
+        gap: 32vh;
+        width: 100%;
+    }
+    .move_onchain{
+        width: 100%;
+        font-size: 3rem;
+    }
+.ubs_assets_swift{
+    width: 100%;
+    margin: 0;
+}
+    .sbi_digital{
+        width: 100%;
+    }
+    .powering_onchain{
+        width: 100%;
+    }
+    .power_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vh;
+
+    }
+    .power_box1{
+        height: 6vh;
+        width: 24vw;
+        font-size: .7rem;
+    }
+    .power_box2{
+             height: 6vh;
+        width: 24vw;
+        font-size: .96rem;
+    }
+    .row1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+    }
+    .box{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgBox{
+        /* height: 50vh; */
+    }
+    .chainLink{
+        /* width: 70vw; */
+    }
+    .chainnLinkChild1{
+        width: 100%;
+    }
+    .chaiLinkPlatform{
+        font-size: 3rem;
+        padding-left: 7vw;
+    }
+    .chainLinkParaMain{
+            padding-left: 7vw;
+    }
+    .learn_more{
+         padding-left: 7vw;
+    }
+    .number_child1 p{
+        font-size: 2.7rem;
+    }
+    .small{
+        font-size: .7rem;
+    }
+    .financialAssest{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .both_text_img{
+        flex-direction: column;
+
+    }
+    .JP_morgan{
+        width: 100%;
+    }
+    .JP_morgan_inner_text{
+        width: 100%;
+    }
+    .connect_and_orchestrate{
+        gap: 3vh;
+    }
+    .enable_tokenized{
+        width: 100%;
+
+    }
+    .why_chainlinkMain{
+        flex-direction: column;
+     
+
+    }
+    .global_standard {
+        width: 94vw;
+        font-size: 3rem;
+    }
+    .why_chainlinkChild2{
+        width: 92vw;
+    }
+    .move_onchain{
+        font-size: 2rem;
+    }
+    .talk_to_expert{
+        width: 20vw;
+        font-size: .7rem;
+        height: 4vh;
+    }
+    .learn_talk{
+        gap: 5vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .talk_to_expert{
+        height: 4vh;
+        width: 25vw;
+    }
+    .learn_more_to{
+         height: 4vh;
+        width: 20vw;
+        font-size: .8rem;
+    }
+    .future_proof_main{
+        padding-bottom: 5vh;
+    }
+    .up {
+        flex-direction: column;
+       
+    }
+    .email_div{
+        justify-content: center;
+    }
+    #inputEmail{
+        width: 45%;
+    }
+    .subscribe_now{
+        width: 35%;
+    }
+    .latest_chainlink{
+        width: 100%;
+    }
+    .down{
+        flex-direction: column;
+        margin-left: 1vw;
+    }
+    #checkbox{
+        width: 3vw;
+    }
+    .agrement{
+        justify-content: center;
+        font-size: .8rem;
+    }
+    .overview ul{
+         /* justify-content: center;
+         text-align: center; */
+        /* align-items: center; */
+    }
+
+}

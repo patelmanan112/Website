@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noise | India's Trusted No.1 Smart Wearable Brand | Buy Now!</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a0a;
+    --white: #ffffff;
+    --gray-50: #f9f9f9;
+    --gray-100: #f2f2f2;
+    --gray-200: #e5e5e5;
+    --gray-400: #a0a0a0;
+    --gray-600: #666666;
+    --gray-800: #2a2a2a;
+    --accent: #1a1a1a;
+    --gold: #c8a84b;
+    --green: #2ecc71;
+    --red: #e74c3c;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    --font-serif: 'DM Serif Display', serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--black);
+    overflow-x: hidden;
+  }
+
+  /* TOP BAR */
+  .top-bar {
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  /* NAVBAR */
+  nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+  }
+
+  .nav-logo {
+    font-family: var(--font-display);
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  .nav-links a:hover { color: var(--gray-600); }
+
+  .nav-links a.dropdown::after {
+    content: ' ▾';
+    font-size: 10px;
+  }
+
+  .nav-icons {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .nav-icons svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    stroke: var(--black);
+    fill: none;
+    stroke-width: 1.8;
+    transition: stroke 0.2s;
+  }
+
+  .nav-icons svg:hover { stroke: var(--gray-600); }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 40%, #2d2d2d 100%);
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 60px 80px;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(200,168,75,0.12) 0%, transparent 70%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 440px;
+  }
+
+  .hero-eyebrow {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gold);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: 72px;
+    line-height: 0.95;
+    color: var(--white);
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+
+  .hero-offer {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 32px;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--white);
+    color: var(--black);
+    padding: 12px 28px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.25s;
+  }
+
+  .btn-primary:hover {
+    background: var(--gold);
+    color: var(--white);
+    transform: translateY(-1px);
+  }
+
+  .btn-dark {
+    display: inline-block;
+    background: var(--black);
+    color: var(--white);
+    padding: 14px 32px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.25s;
+  }
+
+  .btn-dark:hover {
+    background: var(--gray-800);
+    transform: translateY(-1px);
+  }
+
+  .hero-image {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 380px;
+    filter: drop-shadow(0 20px 60px rgba(200,168,75,0.3));
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(-50%) rotate(-2deg); }
+    50% { transform: translateY(calc(-50% - 12px)) rotate(2deg); }
+  }
+
+  /* HERO DOTS */
+  .hero-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    cursor: pointer;
+  }
+
+  .dot.active { background: var(--white); }
+
+  /* SECTION COMMON */
+  section { padding: 60px 40px; }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: var(--black);
+  }
+
+  .view-all {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray-600);
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--gray-400);
+    padding-bottom: 2px;
+    transition: color 0.2s;
+  }
+
+  .view-all:hover { color: var(--black); border-color: var(--black); }
+
+  /* CATEGORY SECTION */
+  .categories-section { background: var(--white); padding-top: 48px; }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .category-card {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--gray-100);
+  }
+
+  .category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .category-card:hover img { transform: scale(1.06); }
+
+  .category-label {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+    padding: 30px 16px 14px;
+    color: var(--white);
+  }
+
+  .category-label .shop-tag {
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .category-label h3 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  /* TABS */
+  .tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  .tab {
+    padding: 7px 18px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: 1.5px solid var(--gray-200);
+    background: var(--white);
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+
+  .tab.active, .tab:hover {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--black);
+  }
+
+  /* PRODUCT CARDS */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+
+  .product-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-card:hover {
+    border-color: var(--black);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  }
+
+  .product-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--black);
+    color: var(--white);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  .product-badge.new { background: #27ae60; }
+  .product-badge.hot { background: var(--red); }
+
+  .wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.2s;
+  }
+
+  .wishlist-btn:hover { background: var(--black); }
+  .wishlist-btn:hover svg { stroke: var(--white); }
+
+  .wishlist-btn svg {
+    width: 14px; height: 14px;
+    stroke: var(--gray-400);
+    fill: none;
+    stroke-width: 2;
+  }
+
+  .product-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    padding: 20px;
+    background: var(--gray-50);
+    transition: transform 0.4s ease;
+  }
+
+  .product-card:hover .product-img { transform: scale(1.04); }
+
+  .product-info {
+    padding: 12px 14px 16px;
+  }
+
+  .product-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 6px;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+
+  .stars { color: #f39c12; font-size: 11px; }
+  .rating-count { font-size: 10px; color: var(--gray-400); }
+
+  .price-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .price-current {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--black);
+  }
+
+  .price-original {
+    font-size: 11px;
+    color: var(--gray-400);
+    text-decoration: line-through;
+  }
+
+  .discount-tag {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--green);
+    background: rgba(46,204,113,0.1);
+    padding: 2px 5px;
+  }
+
+  .offer-text {
+    font-size: 10px;
+    color: var(--gray-600);
+    margin-top: 4px;
+  }
+
+  .add-compare {
+    font-size: 10px;
+    color: var(--gray-400);
+    margin-top: 6px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  /* BANNER STRIP */
+  .banner-strip {
+    background: linear-gradient(135deg, #e8f4fd 0%, #d0eaf8 100%);
+    padding: 48px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .banner-strip::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 50% 100% at 80% 50%, rgba(255,255,255,0.5), transparent);
+  }
+
+  .banner-text { position: relative; z-index: 2; }
+  .banner-text .collab { font-family: var(--font-display); font-size: 40px; letter-spacing: 2px; color: var(--black); }
+  .banner-text .collab span { color: var(--black); font-style: italic; }
+  .banner-text p { font-size: 15px; color: var(--gray-800); margin: 8px 0 4px; }
+  .banner-text .offer { font-size: 22px; font-weight: 800; color: var(--black); }
+  .banner-text .offer span { font-size: 28px; }
+
+  .banner-img {
+    position: relative;
+    z-index: 2;
+    width: 280px;
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.15));
+    animation: float2 3s ease-in-out infinite;
+  }
+
+  @keyframes float2 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  /* GIFT SMART BANNER */
+  .gift-banner {
+    background: linear-gradient(135deg, #1a0a2e 0%, #2d1457 50%, #1a0a2e 100%);
+    padding: 60px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 260px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gift-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 40% 80% at 20% 50%, rgba(200,168,75,0.2), transparent);
+  }
+
+  .gift-title {
+    font-family: var(--font-display);
+    font-size: 68px;
+    color: var(--white);
+    line-height: 0.9;
+    position: relative;
+    z-index: 2;
+  }
+
+  .gift-title em {
+    font-style: normal;
+    color: var(--gold);
+  }
+
+  .gift-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    margin-top: 8px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* CHARGER SECTION */
+  .chargers-section { background: var(--gray-50); }
+
+  /* SOCIAL PROOF */
+  .social-section { background: var(--white); padding: 60px 40px; }
+
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+
+  .social-card {
+    aspect-ratio: 3/4;
+    background: var(--gray-100);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .social-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+
+  .social-card:hover img { transform: scale(1.08); }
+
+  .social-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    transition: background 0.3s;
+  }
+
+  .social-card:hover .social-overlay { background: rgba(0,0,0,0.3); }
+
+  .social-info {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.3s;
+    color: var(--white);
+  }
+
+  .social-card:hover .social-info {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .social-info .name { font-size: 13px; font-weight: 700; }
+  .social-info .product { font-size: 11px; opacity: 0.8; }
+  .social-info .price { font-size: 14px; font-weight: 700; margin-top: 4px; }
+
+  /* FOOTER */
+  footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 60px 40px 30px;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 48px;
+  }
+
+  .footer-brand .logo {
+    font-family: var(--font-display);
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+  }
+
+  .footer-newsletter p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  .newsletter-form {
+    display: flex;
+    gap: 0;
+  }
+
+  .newsletter-form input {
+    flex: 1;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-right: none;
+    color: var(--white);
+    font-size: 12px;
+    font-family: var(--font-body);
+    outline: none;
+  }
+
+  .newsletter-form input::placeholder { color: rgba(255,255,255,0.3); }
+
+  .newsletter-form button {
+    padding: 10px 16px;
+    background: var(--white);
+    color: var(--black);
+    border: none;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+  }
+
+  .newsletter-form button:hover { background: var(--gold); color: var(--white); }
+
+  .footer-col h4 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 16px;
+  }
+
+  .footer-col ul { list-style: none; }
+
+  .footer-col li {
+    margin-bottom: 8px;
+  }
+
+  .footer-col a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover { color: var(--white); }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-bottom p {
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 12px;
+  }
+
+  .social-icon {
+    width: 32px; height: 32px;
+    border: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .social-icon:hover {
+    background: var(--white);
+  }
+
+  .social-icon:hover svg { stroke: var(--black); }
+
+  .social-icon svg {
+    width: 14px; height: 14px;
+    stroke: rgba(255,255,255,0.6);
+    fill: none;
+    stroke-width: 1.8;
+  }
+
+  /* PRODUCT COLOR DOTS */
+  .color-dots {
+    display: flex;
+    gap: 4px;
+    margin-top: 6px;
+  }
+
+  .color-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .color-dot:hover { transform: scale(1.2); }
+
+  /* SECTION BG ALT */
+  .bg-light { background: var(--gray-50); }
+
+  /* HAMBURGER */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--black);
+    transition: all 0.3s;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 1100px) {
+    .products-grid { grid-template-columns: repeat(4, 1fr); }
+    .footer-top { grid-template-columns: 1fr 1fr 1fr; }
+  }
+
+  @media (max-width: 900px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+
+    .hero { padding: 40px 30px; min-height: 360px; }
+    .hero-title { font-size: 52px; }
+    .hero-image { width: 240px; right: 4%; }
+
+    section { padding: 40px 20px; }
+    .categories-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .products-grid { grid-template-columns: repeat(2, 1fr); }
+    .social-grid { grid-template-columns: repeat(3, 1fr); }
+    .banner-strip { padding: 40px 30px; flex-direction: column; gap: 30px; text-align: center; }
+    .gift-banner { padding: 40px 30px; flex-direction: column; gap: 20px; text-align: center; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 600px) {
+    .hero { min-height: 300px; }
+    .hero-title { font-size: 40px; }
+    .hero-image { display: none; }
+    .products-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .categories-grid { grid-template-columns: repeat(2, 1fr); }
+    .social-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-top { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+    .banner-strip { text-align: center; }
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-up {
+    animation: fadeUp 0.6s ease forwards;
+    opacity: 0;
+  }
+
+  .fade-up:nth-child(1) { animation-delay: 0.1s; }
+  .fade-up:nth-child(2) { animation-delay: 0.2s; }
+  .fade-up:nth-child(3) { animation-delay: 0.3s; }
+  .fade-up:nth-child(4) { animation-delay: 0.4s; }
+  .fade-up:nth-child(5) { animation-delay: 0.5s; }
+
+  .section-divider {
+    height: 1px;
+    background: var(--gray-200);
+    margin: 0 40px;
+  }
+
+  .tag-pill {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1.5px solid var(--black);
+    margin-right: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .tag-pill.active, .tag-pill:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  🎧 Free delivery on orders above ₹499 &nbsp;|&nbsp; Use code <strong>NOISE10</strong> for 10% off on first order
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#" class="nav-logo">NOISE</a>
+  <ul class="nav-links">
+    <li><a href="#" class="dropdown">Master Series</a></li>
+    <li><a href="#" class="dropdown">Smartwatches</a></li>
+    <li><a href="#" class="dropdown">Wireless Audio</a></li>
+    <li><a href="#" class="dropdown">Chargers</a></li>
+    <li><a href="#">Off Store</a></li>
+  </ul>
+  <div class="nav-icons">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="padding:0; min-height:480px;">
+  <div style="padding: 60px 80px; position:relative; z-index:2;">
+    <div class="hero-content">
+      <div class="hero-eyebrow">New Launch</div>
+      <div class="hero-title">Airwave<br>Max 6</div>
+      <div class="hero-title" style="font-size:36px; margin-top:-10px;">Own the beat</div>
+      <p class="hero-sub">Flagship ANC Headphones</p>
+      <p class="hero-offer">Special launch offer</p>
+      <a href="#" class="btn-primary">Shop Now</a>
+    </div>
+  </div>
+  <!-- Headphone SVG illustration -->
+  <svg class="hero-image" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="200" cy="150" rx="130" ry="90" stroke="rgba(200,168,75,0.15)" stroke-width="80"/>
+    <path d="M80 150 C80 90 130 50 200 50 C270 50 320 90 320 150" stroke="#c8a84b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <rect x="60" y="130" width="40" height="55" rx="12" fill="#e0e0e0" stroke="#ccc" stroke-width="1"/>
+    <rect x="65" y="138" width="30" height="42" rx="8" fill="#d0d0d0"/>
+    <rect x="300" y="130" width="40" height="55" rx="12" fill="#e0e0e0" stroke="#ccc" stroke-width="1"/>
+    <rect x="305" y="138" width="30" height="42" rx="8" fill="#d0d0d0"/>
+    <circle cx="75" cy="157" r="8" fill="#b0b0b0"/>
+    <circle cx="325" cy="157" r="8" fill="#b0b0b0"/>
+    <path d="M90 135 Q95 125 100 135" stroke="#a0a0a0" stroke-width="1.5" fill="none"/>
+    <path d="M300 135 Q305 125 310 135" stroke="#a0a0a0" stroke-width="1.5" fill="none"/>
+  </svg>
+  <div class="hero-dots" style="z-index:3;">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</section>
+
+<!-- EXPLORE BY CATEGORY -->
+<section class="categories-section">
+  <div class="section-header">
+    <h2 class="section-title">Explore by Category</h2>
+  </div>
+  <div class="categories-grid">
+    <div class="category-card fade-up">
+      <svg style="width:100%;height:100%;background:linear-gradient(135deg,#1a1a2e,#16213e)" viewBox="0 0 300 300">
+        <circle cx="150" cy="150" r="60" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="20"/>
+        <circle cx="150" cy="100" r="8" fill="white" opacity="0.9"/>
+        <rect x="135" y="165" width="30" height="8" rx="4" fill="white" opacity="0.6"/>
+        <circle cx="150" cy="150" r="72" fill="none" stroke="rgba(200,168,75,0.4)" stroke-width="2"/>
+      </svg>
+      <div class="category-label">
+        <span class="shop-tag">Shop</span>
+        <h3>Smartwatches</h3>
+      </div>
+    </div>
+    <div class="category-card fade-up">
+      <svg style="width:100%;height:100%;background:linear-gradient(135deg,#0d1117,#1c1c1c)" viewBox="0 0 300 300">
+        <ellipse cx="150" cy="170" rx="50" ry="35" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="15"/>
+        <path d="M110 170 Q150 80 190 170" stroke="rgba(200,168,75,0.5)" stroke-width="3" fill="none"/>
+        <circle cx="150" cy="155" r="15" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+      </svg>
+      <div class="category-label">
+        <span class="shop-tag">Shop</span>
+        <h3>Audio Gear</h3>
+      </div>
+    </div>
+    <div class="category-card fade-up">
+      <svg style="width:100%;height:100%;background:linear-gradient(135deg,#1a2a1a,#2d4a2d)" viewBox="0 0 300 300">
+        <rect x="120" y="100" width="60" height="100" rx="10" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+        <circle cx="150" cy="115" r="6" fill="rgba(255,255,255,0.5)"/>
+        <rect x="135" y="130" width="30" height="50" rx="4" fill="rgba(255,255,255,0.1)"/>
+        <path d="M150 200 L150 230 L130 230" stroke="rgba(200,168,75,0.8)" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <circle cx="125" cy="233" r="5" fill="rgba(200,168,75,0.8)"/>
+      </svg>
+      <div class="category-label">
+        <span class="shop-tag">Shop</span>
+        <h3>Chargers</h3>
+      </div>
+    </div>
+    <div class="category-card fade-up">
+      <svg style="width:100%;height:100%;background:linear-gradient(135deg,#ffd89b,#19547b)" viewBox="0 0 300 300">
+        <circle cx="150" cy="130" r="40" fill="rgba(255,255,255,0.2)"/>
+        <circle cx="150" cy="115" r="18" fill="rgba(255,255,255,0.4)"/>
+        <ellipse cx="150" cy="145" rx="25" ry="10" fill="rgba(255,255,255,0.3)"/>
+        <path d="M110 170 Q150 195 190 170" stroke="rgba(255,255,255,0.5)" stroke-width="3" fill="none"/>
+        <circle cx="120" cy="165" r="12" fill="rgba(200,168,75,0.6)"/>
+        <circle cx="180" cy="165" r="12" fill="rgba(200,168,75,0.6)"/>
+      </svg>
+      <div class="category-label">
+        <span class="shop-tag">Shop</span>
+        <h3>Noise Junior</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- TOP PICKS -->
+<section class="bg-light">
+  <div class="section-header">
+    <h2 class="section-title">Top Picks For You</h2>
+    <a href="#" class="view-all">View All</a>
+  </div>
+  <div class="tabs">
+    <div class="tab active">Bestsellers</div>
+    <div class="tab">Curated Stars</div>
+  </div>
+  <div class="products-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card fade-up">
+      <div class="product-badge">Bestseller</div>
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <circle cx="100" cy="95" r="55" fill="none" stroke="#1a1a1a" stroke-width="18"/>
+        <circle cx="100" cy="60" r="6" fill="#333"/>
+        <rect x="88" y="140" width="24" height="6" rx="3" fill="#666"/>
+        <circle cx="100" cy="95" r="65" fill="none" stroke="#e5e5e5" stroke-width="2"/>
+        <circle cx="100" cy="95" r="20" fill="#f0f0f0" stroke="#ccc" stroke-width="1"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">NoiseFit Halo 2 Limi...</div>
+        <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(4.5k)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹3,499</span>
+          <span class="price-original">₹6,999</span>
+          <span class="discount-tag">50% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹3,499</div>
+        <div class="color-dots">
+          <div class="color-dot" style="background:#1a1a1a;"></div>
+          <div class="color-dot" style="background:#c8a84b;"></div>
+          <div class="color-dot" style="background:#2c5f8a;"></div>
+        </div>
+        <div class="add-compare">+ Add to Compare</div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card fade-up">
+      <div class="product-badge hot">Hot</div>
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <ellipse cx="100" cy="110" rx="55" ry="40" fill="none" stroke="#1a1a1a" stroke-width="16"/>
+        <path d="M60 110 Q100 30 140 110" stroke="#c8a84b" stroke-width="3" fill="none"/>
+        <circle cx="100" cy="95" r="18" fill="#f0f0f0" stroke="#ddd" stroke-width="1.5"/>
+        <circle cx="75" cy="112" r="10" fill="#e0e0e0" stroke="#ccc"/>
+        <circle cx="125" cy="112" r="10" fill="#e0e0e0" stroke="#ccc"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">Airwave Max 5</div>
+        <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(2.8k)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹1,499</span>
+          <span class="price-original">₹4,999</span>
+          <span class="discount-tag">70% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹1,499</div>
+        <div class="color-dots">
+          <div class="color-dot" style="background:#fff;border-color:#999;"></div>
+          <div class="color-dot" style="background:#1a1a1a;"></div>
+          <div class="color-dot" style="background:#8B4513;"></div>
+        </div>
+        <div class="add-compare">+ Add to Compare</div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card fade-up">
+      <div class="product-badge new">New</div>
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <rect x="70" y="80" width="60" height="70" rx="30" fill="#1a1a1a"/>
+        <rect x="85" y="95" width="30" height="42" rx="15" fill="#2a2a2a"/>
+        <circle cx="100" cy="88" r="5" fill="#555"/>
+        <circle cx="80" cy="140" r="10" fill="#333" stroke="#555" stroke-width="1"/>
+        <circle cx="120" cy="140" r="10" fill="#333" stroke="#555" stroke-width="1"/>
+        <path d="M80 130 L120 130" stroke="#444" stroke-width="3"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">Buds Marine</div>
+        <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(1.2k)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹1,299</span>
+          <span class="price-original">₹2,999</span>
+          <span class="discount-tag">57% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹1,299</div>
+        <div class="color-dots">
+          <div class="color-dot" style="background:#1a1a1a;"></div>
+          <div class="color-dot" style="background:#2c5f8a;"></div>
+          <div class="color-dot" style="background:#2d4a2d;"></div>
+        </div>
+        <div class="add-compare">+ Add to Compare</div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card fade-up">
+      <div class="product-badge">Popular</div>
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <circle cx="100" cy="95" r="50" fill="none" stroke="#c8a84b" stroke-width="16"/>
+        <circle cx="100" cy="60" r="5" fill="#c8a84b"/>
+        <rect x="89" y="138" width="22" height="5" rx="2.5" fill="#b8962a"/>
+        <circle cx="100" cy="95" r="62" fill="none" stroke="#f0e0c0" stroke-width="1.5"/>
+        <circle cx="100" cy="95" r="18" fill="#faf5e4" stroke="#e8d5a0" stroke-width="1"/>
+        <path d="M93 95 L97 99 L107 89" stroke="#c8a84b" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">NoiseFit Twist Go</div>
+        <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(3.6k)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹1,999</span>
+          <span class="price-original">₹4,499</span>
+          <span class="discount-tag">55% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹1,999</div>
+        <div class="color-dots">
+          <div class="color-dot" style="background:#c8a84b;"></div>
+          <div class="color-dot" style="background:#1a1a1a;"></div>
+          <div class="color-dot" style="background:#6b2d2d;"></div>
+        </div>
+        <div class="add-compare">+ Add to Compare</div>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card fade-up">
+      <div class="product-badge">Editor's Pick</div>
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <rect x="65" y="75" width="70" height="85" rx="35" fill="#e0e0e0"/>
+        <rect x="78" y="88" width="44" height="60" rx="22" fill="#d0d0d0"/>
+        <circle cx="100" cy="83" r="6" fill="#bbb"/>
+        <circle cx="78" cy="148" r="12" fill="#ccc" stroke="#bbb" stroke-width="1.5"/>
+        <circle cx="122" cy="148" r="12" fill="#ccc" stroke="#bbb" stroke-width="1.5"/>
+        <line x1="78" y1="136" x2="122" y2="136" stroke="#c0c0c0" stroke-width="2.5"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">Air Clips 2</div>
+        <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(890)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹2,499</span>
+          <span class="price-original">₹5,999</span>
+          <span class="discount-tag">58% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹2,499</div>
+        <div class="color-dots">
+          <div class="color-dot" style="background:#fff;border-color:#999;"></div>
+          <div class="color-dot" style="background:#1a1a1a;"></div>
+          <div class="color-dot" style="background:#c0c0c0;"></div>
+        </div>
+        <div class="add-compare">+ Add to Compare</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- FRESH FINDS -->
+<section>
+  <div class="section-header">
+    <h2 class="section-title">Fresh Finds</h2>
+    <a href="#" class="view-all">View All</a>
+  </div>
+  <div class="tabs">
+    <div class="tab active">New Launches</div>
+    <div class="tab">The Noise Choice</div>
+  </div>
+  <div class="products-grid">
+    <div class="product-card fade-up">
+      <div class="product-badge new">New</div>
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <ellipse cx="100" cy="115" rx="58" ry="42" fill="none" stroke="#e0e0e0" stroke-width="18"/>
+        <path d="M58 115 Q100 28 142 115" stroke="#d0d0d0" stroke-width="3" fill="none"/>
+        <circle cx="100" cy="98" r="22" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1.5"/>
+        <circle cx="72" cy="116" r="11" fill="#ebebeb" stroke="#ddd"/>
+        <circle cx="128" cy="116" r="11" fill="#ebebeb" stroke="#ddd"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">Airwave Max 6</div>
+        <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(452)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹2,499</span>
+          <span class="price-original">₹5,999</span>
+          <span class="discount-tag">58% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹2,499</div>
+        <div class="add-compare">+ Add to Compare</div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up">
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <circle cx="100" cy="95" r="52" fill="none" stroke="#333" stroke-width="17"/>
+        <circle cx="100" cy="60" r="5.5" fill="#555"/>
+        <rect x="89" y="140" width="22" height="5" rx="2.5" fill="#444"/>
+        <circle cx="100" cy="95" r="65" fill="none" stroke="#eee" stroke-width="1.5"/>
+        <circle cx="100" cy="95" r="20" fill="#f5f5f5" stroke="#ddd" stroke-width="1"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">Magoth Q2 Powerban...</div>
+        <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(218)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹1,799</span>
+          <span class="price-original">₹3,499</span>
+          <span class="discount-tag">48% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹1,799</div>
+        <div class="add-compare">+ Add to Compare</div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up">
+      <div class="product-badge new">New</div>
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <circle cx="100" cy="95" r="50" fill="none" stroke="#1a1a2e" stroke-width="16"/>
+        <circle cx="100" cy="60" r="5" fill="#3a3a5e"/>
+        <rect x="89" y="138" width="22" height="5" rx="2.5" fill="#2a2a4e"/>
+        <circle cx="100" cy="95" r="62" fill="none" stroke="#c8c8e8" stroke-width="1.5"/>
+        <circle cx="100" cy="95" r="18" fill="#e8e8f8" stroke="#c8c8e8" stroke-width="1"/>
+        <path d="M95 95 L98 100 L106 86" stroke="#3a3a8e" stroke-width="1.8" fill="none"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">NoiseFit Pro 6R</div>
+        <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(987)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹2,999</span>
+          <span class="price-original">₹6,999</span>
+          <span class="discount-tag">57% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹2,999</div>
+        <div class="add-compare">+ Add to Compare</div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up">
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <rect x="70" y="75" width="60" height="80" rx="8" fill="#8B7355"/>
+        <rect x="78" y="83" width="44" height="64" rx="4" fill="#7a6448"/>
+        <circle cx="100" cy="82" r="4" fill="#6a5438"/>
+        <rect x="82" y="90" width="36" height="50" rx="2" fill="#6a5438" opacity="0.5"/>
+        <circle cx="100" cy="165" r="5" fill="#8B7355"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">Master Buds with Ma...</div>
+        <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(634)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹1,599</span>
+          <span class="price-original">₹3,499</span>
+          <span class="discount-tag">54% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹1,599</div>
+        <div class="add-compare">+ Add to Compare</div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up">
+      <div class="product-badge">Premium</div>
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <rect x="72" y="80" width="56" height="72" rx="28" fill="#f0f0f0"/>
+        <rect x="83" y="92" width="34" height="50" rx="17" fill="#e0e0e0"/>
+        <circle cx="100" cy="88" r="5" fill="#ccc"/>
+        <circle cx="83" cy="145" r="9" fill="#ddd" stroke="#ccc" stroke-width="1.2"/>
+        <circle cx="117" cy="145" r="9" fill="#ddd" stroke="#ccc" stroke-width="1.2"/>
+        <line x1="83" y1="136" x2="117" y2="136" stroke="#d0d0d0" stroke-width="2"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">Buds N2 Pro</div>
+        <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(1.4k)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹1,999</span>
+          <span class="price-original">₹4,499</span>
+          <span class="discount-tag">55% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹1,999</div>
+        <div class="add-compare">+ Add to Compare</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNIDAYS BANNER -->
+<div class="banner-strip">
+  <div class="banner-text">
+    <div class="collab">NOISE <span>X</span> UNiDAYS</div>
+    <p>Your student ID just got way cooler.</p>
+    <div class="offer">Flat <span>15% OFF</span> for students who study smart<br>and shop smarter</div>
+    <br>
+    <a href="#" class="btn-dark" style="margin-top:20px;">Explore Now</a>
+  </div>
+  <svg class="banner-img" viewBox="0 0 300 220" fill="none">
+    <ellipse cx="150" cy="120" rx="100" ry="70" fill="none" stroke="#2c5f8a" stroke-width="26"/>
+    <path d="M60 120 Q150 38 240 120" stroke="#1a4a7a" stroke-width="4" fill="none"/>
+    <circle cx="150" cy="100" r="30" fill="white" stroke="#e8e8e8" stroke-width="2"/>
+    <circle cx="75" cy="122" r="18" fill="white" stroke="#ddd" stroke-width="1.5"/>
+    <circle cx="225" cy="122" r="18" fill="white" stroke="#ddd" stroke-width="1.5"/>
+  </svg>
+</div>
+
+<!-- BE LIMITLESS - CHARGERS -->
+<section class="chargers-section">
+  <div class="section-header">
+    <h2 class="section-title">Be Limitless</h2>
+    <a href="#" class="view-all">View All</a>
+  </div>
+  <div class="tabs">
+    <div class="tab active">Power Series</div>
+  </div>
+  <div class="products-grid">
+    <div class="product-card fade-up">
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <rect x="65" y="60" width="70" height="95" rx="12" fill="#2a2a2a"/>
+        <rect x="75" y="70" width="50" height="75" rx="6" fill="#1a1a1a"/>
+        <circle cx="100" cy="107" r="18" fill="#333" stroke="#444" stroke-width="1.5"/>
+        <path d="M88 107 Q100 95 112 107 Q100 119 88 107Z" fill="#555"/>
+        <rect x="88" y="55" width="24" height="8" rx="4" fill="#444"/>
+        <circle cx="155" cy="90" r="8" fill="#c8a84b" opacity="0.6"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">Magneto Q2 Powerban...</div>
+        <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(756)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹1,499</span>
+          <span class="price-original">₹2,999</span>
+          <span class="discount-tag">50% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹1,499</div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up">
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <rect x="75" y="55" width="50" height="100" rx="8" fill="#1a1a1a"/>
+        <rect x="82" y="63" width="36" height="72" rx="4" fill="#2a2a2a"/>
+        <rect x="90" y="48" width="20" height="10" rx="3" fill="#333"/>
+        <rect x="88" y="153" width="24" height="6" rx="2" fill="#444"/>
+        <circle cx="100" cy="99" r="10" fill="#333" stroke="#555" stroke-width="1"/>
+        <path d="M96 99 L99 103 L104 94" stroke="#27ae60" stroke-width="1.5" fill="none"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">20W Fast Charger</div>
+        <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(2.1k)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹599</span>
+          <span class="price-original">₹1,299</span>
+          <span class="discount-tag">54% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹599</div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up">
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <rect x="60" y="70" width="80" height="65" rx="14" fill="#1a1a1a"/>
+        <rect x="68" y="78" width="64" height="49" rx="8" fill="#2a2a2a"/>
+        <circle cx="100" cy="102" r="12" fill="#333" stroke="#555" stroke-width="1.5"/>
+        <path d="M97 102 L100 106 L105 96" stroke="#e74c3c" stroke-width="1.5" fill="none"/>
+        <rect x="88" y="135" width="24" height="8" rx="2" fill="#333"/>
+        <rect x="94" y="143" width="12" height="12" rx="1" fill="#2a2a2a"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">Noise Power Charger</div>
+        <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(432)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹799</span>
+          <span class="price-original">₹1,599</span>
+          <span class="discount-tag">50% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹799</div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up">
+      <div class="product-badge new">New</div>
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <rect x="80" y="65" width="40" height="85" rx="8" fill="#1c1c1c"/>
+        <rect x="86" y="73" width="28" height="62" rx="4" fill="#2c2c2c"/>
+        <circle cx="100" cy="104" r="8" fill="#333" stroke="#555" stroke-width="1"/>
+        <rect x="90" y="58" width="20" height="10" rx="5" fill="#333"/>
+        <rect x="92" y="150" width="16" height="5" rx="1" fill="#444"/>
+        <circle cx="138" cy="85" r="5" fill="#27ae60" opacity="0.7"/>
+        <circle cx="138" cy="100" r="3" fill="#e74c3c" opacity="0.5"/>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">Tag 1 Smart Tracker</div>
+        <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(1.8k)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹1,299</span>
+          <span class="price-original">₹2,499</span>
+          <span class="discount-tag">48% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹1,299</div>
+      </div>
+    </div>
+
+    <div class="product-card fade-up">
+      <div class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <svg class="product-img" viewBox="0 0 200 200">
+        <rect x="55" y="75" width="90" height="60" rx="10" fill="#1a1a1a"/>
+        <rect x="63" y="83" width="74" height="44" rx="6" fill="#2a2a2a"/>
+        <rect x="85" y="135" width="30" height="10" rx="3" fill="#333"/>
+        <rect x="93" y="145" width="14" height="14" rx="1" fill="#2a2a2a"/>
+        <circle cx="100" cy="105" r="10" fill="#333" stroke="#555" stroke-width="1.5"/>
+        <text x="95" y="110" font-size="12" fill="#c8a84b" font-family="Arial">W</text>
+      </svg>
+      <div class="product-info">
+        <div class="product-name">Noise 100W Charging...</div>
+        <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(567)</span></div>
+        <div class="price-row">
+          <span class="price-current">₹1,999</span>
+          <span class="price-original">₹3,999</span>
+          <span class="discount-tag">50% OFF</span>
+        </div>
+        <div class="offer-text">🎁 Offer Price ₹1,999</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GIFT SMART BANNER -->
+<div class="gift-banner">
+  <div>
+    <div class="gift-title">GIFT<br><em>SMART</em></div>
+    <p class="gift-sub" style="margin-top:12px;">with NOISE</p>
+    <p style="font-size:12px;color:rgba(255,255,255,0.4);margin-top:6px;">Add Noise gift wraps with any order</p>
+    <a href="#" class="btn-primary" style="margin-top:24px;">Shop Now</a>
+  </div>
+  <svg style="width:300px;position:relative;z-index:2;" viewBox="0 0 300 280" fill="none">
+    <rect x="80" y="120" width="140" height="100" rx="8" fill="rgba(200,168,75,0.2)" stroke="rgba(200,168,75,0.4)" stroke-width="2"/>
+    <rect x="80" y="100" width="140" height="28" rx="4" fill="rgba(200,168,75,0.3)" stroke="rgba(200,168,75,0.5)" stroke-width="1.5"/>
+    <line x1="150" y1="100" x2="150" y2="220" stroke="rgba(200,168,75,0.5)" stroke-width="2"/>
+    <path d="M150 100 Q140 70 120 75 Q110 90 130 92 Q140 95 150 100Z" fill="rgba(200,168,75,0.4)"/>
+    <path d="M150 100 Q160 70 180 75 Q190 90 170 92 Q160 95 150 100Z" fill="rgba(200,168,75,0.4)"/>
+    <circle cx="80" cy="60" r="20" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+    <circle cx="220" cy="80" r="15" fill="rgba(200,168,75,0.2)" stroke="rgba(200,168,75,0.3)" stroke-width="1.5"/>
+    <circle cx="240" cy="50" r="10" fill="rgba(255,100,100,0.2)" stroke="rgba(255,100,100,0.3)" stroke-width="1"/>
+  </svg>
+</div>
+
+<!-- SEE IT. LOVE IT. SHOP IT. -->
+<section class="social-section">
+  <div class="section-header" style="margin-bottom:8px;">
+    <h2 class="section-title">See it. Love it. Shop it.</h2>
+  </div>
+  <p style="font-size:13px;color:var(--gray-600);margin-bottom:28px;">Real people, real style.</p>
+  <div class="social-grid">
+    <div class="social-card">
+      <svg style="width:100%;height:100%;background:linear-gradient(135deg,#1a0a2e,#3d1a6e)" viewBox="0 0 200 260">
+        <circle cx="100" cy="100" r="45" fill="rgba(200,168,75,0.3)"/>
+        <circle cx="100" cy="80" r="20" fill="rgba(255,255,255,0.3)"/>
+        <ellipse cx="100" cy="115" rx="30" ry="12" fill="rgba(255,255,255,0.2)"/>
+        <circle cx="60" cy="185" r="25" fill="none" stroke="rgba(200,168,75,0.5)" stroke-width="10"/>
+        <circle cx="60" cy="168" r="6" fill="rgba(200,168,75,0.8)"/>
+      </svg>
+      <div class="social-overlay">
+        <div class="social-info">
+          <div class="name">Master Buds Max</div>
+          <div class="price">₹2,499</div>
+        </div>
+      </div>
+    </div>
+    <div class="social-card">
+      <svg style="width:100%;height:100%;background:linear-gradient(135deg,#0d2818,#1a5c30)" viewBox="0 0 200 260">
+        <circle cx="100" cy="90" r="50" fill="rgba(255,255,255,0.1)"/>
+        <circle cx="100" cy="72" r="22" fill="rgba(255,255,255,0.2)"/>
+        <circle cx="70" cy="185" r="22" fill="none" stroke="rgba(46,204,113,0.5)" stroke-width="9"/>
+        <circle cx="70" cy="170" r="5" fill="rgba(46,204,113,0.8)"/>
+        <rect x="52" y="200" width="36" height="4" rx="2" fill="rgba(46,204,113,0.4)"/>
+      </svg>
+      <div class="social-overlay">
+        <div class="social-info">
+          <div class="name">Master Buds</div>
+          <div class="price">₹1,499</div>
+        </div>
+      </div>
+    </div>
+    <div class="social-card">
+      <svg style="width:100%;height:100%;background:linear-gradient(135deg,#2a1500,#6b3a00)" viewBox="0 0 200 260">
+        <circle cx="100" cy="95" r="48" fill="rgba(200,168,75,0.2)"/>
+        <circle cx="100" cy="76" r="21" fill="rgba(255,255,255,0.25)"/>
+        <circle cx="100" cy="190" r="20" fill="none" stroke="rgba(200,168,75,0.6)" stroke-width="8"/>
+        <circle cx="100" cy="176" r="5" fill="rgba(200,168,75,0.9)"/>
+        <rect x="82" y="205" width="36" height="4" rx="2" fill="rgba(200,168,75,0.4)"/>
+      </svg>
+      <div class="social-overlay">
+        <div class="social-info">
+          <div class="name">ColorFit Pro 6</div>
+          <div class="price">₹3,499</div>
+        </div>
+      </div>
+    </div>
+    <div class="social-card">
+      <svg style="width:100%;height:100%;background:linear-gradient(135deg,#001529,#003366)" viewBox="0 0 200 260">
+        <circle cx="100" cy="95" r="48" fill="rgba(41,182,246,0.15)"/>
+        <circle cx="100" cy="76" r="21" fill="rgba(255,255,255,0.2)"/>
+        <rect x="68" y="180" width="64" height="6" rx="3" fill="none" stroke="rgba(41,182,246,0.5)" stroke-width="1.5"/>
+        <circle cx="75" cy="183" r="8" fill="rgba(41,182,246,0.3)"/>
+        <circle cx="125" cy="183" r="8" fill="rgba(41,182,246,0.3)"/>
+      </svg>
+      <div class="social-overlay">
+        <div class="social-info">
+          <div class="name">Air Clips</div>
+          <div class="price">₹1,299</div>
+        </div>
+      </div>
+    </div>
+    <div class="social-card">
+      <svg style="width:100%;height:100%;background:linear-gradient(135deg,#1a1a1a,#3a3a3a)" viewBox="0 0 200 260">
+        <circle cx="100" cy="95" r="48" fill="rgba(255,255,255,0.08)"/>
+        <circle cx="100" cy="76" r="21" fill="rgba(255,255,255,0.15)"/>
+        <circle cx="100" cy="185" r="22" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="8"/>
+        <circle cx="100" cy="170" r="5" fill="rgba(255,255,255,0.6)"/>
+        <rect x="82" y="200" width="36" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+      </svg>
+      <div class="social-overlay">
+        <div class="social-info">
+          <div class="name">NoiseFit Diva 2</div>
+          <div class="price">₹2,999</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">NOISE</div>
+      <div class="footer-newsletter">
+        <p>Register for Latest Updates from Noise</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email Address">
+          <button>→</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Shop by Category</h4>
+      <ul>
+        <li><a href="#">Smart Watches with Alexa</a></li>
+        <li><a href="#">AMOLED Display Smart Watches</a></li>
+        <li><a href="#">Round Display Smart Watches</a></li>
+        <li><a href="#">Health & Leather Smart Watches</a></li>
+        <li><a href="#">BT Calling Smart Watches</a></li>
+        <li><a href="#">All Smart Watches</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Shop by Price</h4>
+      <ul>
+        <li><a href="#">Smart Watches Under ₹1500</a></li>
+        <li><a href="#">Smart Watches Under ₹2000</a></li>
+        <li><a href="#">Smart Watches Under ₹3000</a></li>
+        <li><a href="#">Smart Watches Under ₹5000</a></li>
+        <li><a href="#">Smart Watches Above ₹5000</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Earbuds by Price</h4>
+      <ul>
+        <li><a href="#">Earbuds Under ₹500</a></li>
+        <li><a href="#">Earbuds Under ₹1000</a></li>
+        <li><a href="#">Earbuds Under ₹1500</a></li>
+        <li><a href="#">Earbuds Under ₹2000</a></li>
+        <li><a href="#">Earbuds Above ₹2000</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">Our Products</a></li>
+        <li><a href="#">About Team</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">For Athletes</a></li>
+        <li><a href="#">Legal</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © 2025 Noise. All Rights Reserved.</p>
+    <div class="footer-social">
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </div>
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </div>
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+      </div>
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Tab switching
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+      this.closest('.tabs').querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // Hero dots
+  document.querySelectorAll('.dot').forEach((dot, i) => {
+    dot.addEventListener('click', function() {
+      document.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // Intersection Observer for fade-up animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up').forEach(el => {
+    el.style.animationPlayState = 'paused';
+    observer.observe(el);
+  });
+
+  // Wishlist toggle
+  document.querySelectorAll('.wishlist-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const svg = this.querySelector('svg');
+      const path = svg.querySelector('path');
+      if (path.getAttribute('fill') === 'var(--red)') {
+        path.setAttribute('fill', 'none');
+        path.setAttribute('stroke', 'var(--gray-400)');
+        this.style.background = 'var(--white)';
+      } else {
+        path.setAttribute('fill', 'var(--red)');
+        path.setAttribute('stroke', 'var(--red)');
+        this.style.background = '#fff0f0';
+      }
+    });
+  });
+
+  // Auto-rotate hero dots
+  let current = 0;
+  setInterval(() => {
+    const dots = document.querySelectorAll('.dot');
+    dots[current].classList.remove('active');
+    current = (current + 1) % dots.length;
+    dots[current].classList.add('active');
+  }, 3000);
+</script>
+</body>
+</html>
